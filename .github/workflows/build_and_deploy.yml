@@ -1,9 +1,8 @@
 name: Build, Deploy, and Run on GCP
 
 on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+  release:
+    types: [published]
 
 jobs:
   build:
